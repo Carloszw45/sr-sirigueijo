@@ -218,7 +218,7 @@
   const banners = [
     {eyebrow:'MONTE SEU PEDIDO',lines:['ESCOLHA.','COMBINE.','APROVEITE.'],copy:'Seu próximo pedido<br>começa por aqui.',image:'assets/cutout-combo-v2.webp',alt:'Hambúrguer com batatas e bebida — imagem ilustrativa',category:'Todos'},
     {eyebrow:'ENCONTRE SEU FAVORITO',lines:['BATEU','AQUELA','FOME?'],copy:'Explore os lanches<br>do nosso catálogo.',image:'assets/cutout-double-v2.webp',alt:'Hambúrguer duplo — imagem ilustrativa',category:'Lanches'},
-    {eyebrow:'PARA ACOMPANHAR',lines:['MAIS UMA','ESCOLHA.','DO SEU JEITO.'],copy:'Monte seu pedido<br>com acompanhamentos.',image:'assets/cutout-fries-v2.webp',alt:'Porção de fritas — imagem ilustrativa',category:'Porções'},
+    {eyebrow:'PARA ACOMPANHAR',lines:['MAIS UM','SABOR.','NO PEDIDO.'],copy:'Monte seu pedido<br>com acompanhamentos.',image:'assets/cutout-fries-v2.webp',alt:'Porção de fritas — imagem ilustrativa',category:'Porções'},
     {eyebrow:'SEU PEDIDO COMPLETO',lines:['LANCHE.','BEBIDA.','SEU COMBO.'],copy:'Junte seus favoritos<br>em um só carrinho.',image:'assets/cutout-combo-v2.webp',alt:'Combo de lanche, fritas e bebida — imagem ilustrativa',category:'Combos'}
   ];
   function renderBanner(index) {

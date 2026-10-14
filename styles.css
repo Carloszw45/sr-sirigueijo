@@ -11,3 +11,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.product-card:hover{transform:none}}
 @media(max-width:600px){.hero-copy{position:absolute;left:18px;top:17px;bottom:19px;padding:0;width:43%;display:flex;flex-direction:column;align-items:flex-start}.hero-copy h1{margin:8px 0 7px;font-size:clamp(25px,7.3vw,42px);line-height:.93}.hero-copy>p{margin-bottom:8px;line-height:1.45}.hero-copy>.banner-button{margin-top:auto}.hero-copy>.hero-eyebrow{font-size:6px}.hero-food{right:-10%;width:73%}}
 @media(max-width:365px){.hero-banner{min-height:183px}.hero-copy{left:15px;top:15px;bottom:16px;width:43%}.hero-copy h1{font-size:25px;line-height:.92}.hero-copy>p{font-size:7.5px}.hero-copy>.banner-button{font-size:8px;min-height:26px}}
+
+/* Cards compactos para manter as proporções da referência no celular. */
+@media(max-width:600px){.product-info h3{min-height:13px}.product-description{min-height:23.2px;-webkit-line-clamp:2}.combo-banner>img{width:43%}}
+@media(max-width:365px){.product-info h3{min-height:11.7px}.product-description{min-height:21.75px}}
