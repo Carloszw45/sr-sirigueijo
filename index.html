@@ -3,21 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#141111">
+  <meta name="theme-color" content="#fff4e6">
   <meta name="robots" content="noindex,nofollow">
-  <title>Sr Sirigueijo — Monte seu pedido</title>
-  <meta name="description" content="Prévia do catálogo Sr Sirigueijo. Explore os exemplos, monte seu carrinho e revise o pedido. R. VP-2, 525 — Nova Contagem.">
-  <meta property="og:title" content="Sr Sirigueijo — Monte seu pedido">
-  <meta property="og:description" content="Seu próximo pedido começa aqui. Prévia do catálogo com carrinho integrado.">
+  <title>Sr Sirigueijo — Seu pedido, do seu jeito</title>
+  <meta name="description" content="Escolha seus itens, monte o carrinho e confira o resumo do pedido. Prévia do catálogo Sr Sirigueijo em Nova Contagem.">
+  <meta property="og:title" content="Sr Sirigueijo — Seu pedido, do seu jeito">
+  <meta property="og:description" content="Catálogo com carrinho, favoritos e pedido organizado. Cardápio demonstrativo; valores a confirmar.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://carloszw45.github.io/sr-sirigueijo/assets/hero.webp">
   <link rel="canonical" href="https://carloszw45.github.io/sr-sirigueijo/">
   <link rel="icon" href="assets/logo.jpg">
   <link rel="preload" href="assets/display.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20261014-1">
-  <script src="data.js" defer></script>
+  <link rel="preload" href="assets/ui-sans.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=20261014-reference-1">
+  <script src="data.js?v=20261014-reference-1" defer></script>
   <script src="core.js" defer></script>
-  <script src="app.js" defer></script>
+  <script src="app.js?v=20261014-reference-1" defer></script>
 </head>
 <body>
   <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -32,81 +33,76 @@
     <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
     <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".7"/></symbol>
     <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M21 11.5a9 9 0 0 1-13.6 7.8L3 21l1.5-4.7A9 9 0 1 1 21 11.5Z"/><path d="M8 7c-2 3 3 8 6 8l2-2-3-1-1 1-2-2 1-1-1-3H8Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="9" cy="18" r="2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.5 4.5a5.1 5.1 0 0 0-7.3 0L12 5.7l-1.2-1.2a5.1 5.1 0 0 0-7.3 7.3L12 21l8.5-9.2a5.1 5.1 0 0 0 0-7.3Z"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8M5 10v11h5v-7h4v7h5V10"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-shop" viewBox="0 0 24 24"><path d="M3 9 5 3h14l2 6M4 9v12h16V9M9 21v-7h6v7"/><path d="M3 9c0 4 6 4 6 0 0 4 6 4 6 0 0 4 6 4 6 0M9 3v6M15 3v6"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7v.2"/></symbol>
   </svg>
   <a class="skip-link" href="#cardapio">Ir para o cardápio</a>
-  <div class="preview-notice" id="preview-notice"><span>PRÉVIA</span> Cardápio demonstrativo · produtos e preços a confirmar</div>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="#inicio" class="brand" aria-label="Sr Sirigueijo, início"><img src="assets/logo.jpg" width="54" height="54" alt="Logo Sr Sirigueijo"><span>SR SIRIGUEIJO<small>NOVA CONTAGEM</small></span></a>
-      <nav class="desktop-nav" aria-label="Navegação principal"><a href="#cardapio">Cardápio</a><a href="#como-pedir">Como pedir</a><a href="#localizacao">A loja</a></nav>
-      <button class="cart-trigger" type="button" data-open-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg><span class="cart-label">Meu pedido</span><span class="cart-counter" data-cart-count>0</span></button>
-    </div>
-  </header>
-  <main id="main-content">
-    <section class="hero container" id="inicio" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="small-spark">✦</span> SR SIRIGUEIJO · NOVA CONTAGEM</div>
-        <h1 id="hero-title">DEU<br><span>FOME?</span></h1>
-        <p>Seu próximo pedido começa aqui.<br>Escolha, monte o carrinho e revise tudo.</p>
-        <a class="button button-yellow" href="#cardapio">Explorar cardápio<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        <a class="hero-location" href="#localizacao"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>R. VP-2, 525 — Nova Contagem</span></a>
+  <div class="app-shell">
+    <header class="app-header" id="inicio">
+      <button class="soft-button menu-button" type="button" id="open-navigation" aria-label="Abrir menu"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      <button class="wordmark" type="button" data-view="home" aria-label="Sr Sirigueijo, início"><small>Olá, bateu aquela fome? <span>👋</span></small><strong>SR SIRIGUEIJO</strong><span>Seu pedido, do seu jeito.</span></button>
+      <div class="header-actions"><button class="soft-button info-button" type="button" data-open-shop aria-label="Informações da loja"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg></button><button class="soft-button" type="button" data-open-cart aria-label="Abrir carrinho"><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg><span class="count-badge" data-cart-count hidden>0</span></button></div>
+    </header>
+    <main id="main-content">
+      <div class="search-row"><label class="search-box"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span class="sr-only">Buscar no cardápio</span><input type="search" id="search" placeholder="Busque seu lanche favorito..." autocomplete="off"></label><button class="soft-button filter-button" type="button" id="toggle-filters" aria-label="Filtros do cardápio" aria-expanded="false" aria-controls="filter-panel"><svg class="icon" aria-hidden="true"><use href="#i-filter"/></svg></button></div>
+      <section class="filter-panel" id="filter-panel" aria-label="Organizar o cardápio" hidden><label for="sort-order">Organizar por</label><select id="sort-order"><option value="default">Ordem do cardápio</option><option value="name">Nome: A a Z</option></select><button type="button" id="clear-filters">Limpar filtros</button></section>
+      <section class="hero-banner" id="hero-banner" aria-labelledby="hero-title" data-home-only>
+        <div class="hero-copy"><span class="hero-eyebrow" id="hero-eyebrow">MONTE SEU PEDIDO</span><h1 id="hero-title">ESCOLHA.<br>COMBINE.<br>APROVEITE.</h1><p id="hero-copy">Seu próximo pedido<br>começa por aqui.</p><button class="banner-button" type="button" id="hero-action">Montar pedido<span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></button></div>
+        <img class="hero-food" id="hero-food" src="assets/cutout-combo-v2.webp" alt="Hambúrguer com batatas e bebida — imagem ilustrativa" width="900" height="900" fetchpriority="high">
+        <span class="hero-image-note">IMAGEM ILUSTRATIVA</span>
+        <div class="banner-dots" role="group" aria-label="Banners"><button type="button" class="active" data-slide="0" aria-label="Ver banner 1" aria-pressed="true"></button><button type="button" data-slide="1" aria-label="Ver banner 2" aria-pressed="false"></button><button type="button" data-slide="2" aria-label="Ver banner 3" aria-pressed="false"></button><button type="button" data-slide="3" aria-label="Ver banner 4" aria-pressed="false"></button></div>
+      </section>
+      <div class="categories" role="group" aria-label="Categorias do cardápio">
+        <button class="category active" type="button" data-category="Todos" aria-pressed="true"><span class="category-picture"><img src="assets/cutout-combo-v2.webp" alt="" width="72" height="72"></span><span>Todos</span></button>
+        <button class="category" type="button" data-category="Combos" aria-pressed="false"><span class="category-picture"><img src="assets/cutout-combo-v2.webp" alt="" width="72" height="72"></span><span>Combos</span></button>
+        <button class="category" type="button" data-category="Lanches" aria-pressed="false"><span class="category-picture"><img src="assets/cutout-burger-v2.webp" alt="" width="72" height="72"></span><span>Lanches</span></button>
+        <button class="category" type="button" data-category="Porções" aria-pressed="false"><span class="category-picture"><img src="assets/cutout-fries-v2.webp" alt="" width="72" height="72"></span><span>Porções</span></button>
+        <button class="category" type="button" data-category="Bebidas" aria-pressed="false"><span class="category-picture"><img src="assets/cutout-drink-v2.webp" alt="" width="72" height="72"></span><span>Bebidas</span></button>
+        <button class="category" type="button" data-category="Favoritos" aria-pressed="false"><span class="category-picture category-heart"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span><span>Favoritos</span></button>
       </div>
-      <div class="hero-visual">
-        <div class="hero-outline" aria-hidden="true"></div>
-        <img class="hero-photo" src="assets/hero.webp" alt="Hambúrgueres em uma tábua — fotografia ilustrativa" width="1400" height="1750" fetchpriority="high">
-        <span class="photo-caption">FOTO ILUSTRATIVA</span>
-        <div class="hero-stamp" aria-hidden="true"><span>ESCOLHA</span><b>DO SEU<br>JEITO.</b><svg class="icon"><use href="#i-up-right"/></svg></div>
-        <div class="visual-bottom"><span>01 / O SEU PEDIDO</span><span>✦</span></div>
-      </div>
-      <a class="scroll-hint" href="#cardapio">VEM ESCOLHER<span>↓</span></a>
-    </section>
-    <div class="brand-strip" aria-hidden="true"><div>ESCOLHA <span>✦</span> MONTE SEU CARRINHO <span>✦</span> DO SEU JEITO <span>✦</span> SR SIRIGUEIJO <span>✦</span> ESCOLHA <span>✦</span> MONTE SEU CARRINHO <span>✦</span> DO SEU JEITO <span>✦</span></div></div>
-    <section class="menu-section container" id="cardapio" aria-labelledby="menu-title">
-      <div class="section-heading"><div><div class="eyebrow">01 / ESCOLHA SEUS ITENS</div><h2 id="menu-title">O QUE VAI<br><span>NO SEU PEDIDO?</span></h2></div><p>De um lanche a um pedido completo.<br>Adicione seus itens favoritos ao carrinho.</p></div>
-      <div class="menu-toolbar">
-        <div class="categories" role="group" aria-label="Filtrar cardápio"><button type="button" class="category active" aria-pressed="true" data-category="Todos">Todos<span>06</span></button><button type="button" class="category" aria-pressed="false" data-category="Lanches">Lanches</button><button type="button" class="category" aria-pressed="false" data-category="Porções">Porções</button><button type="button" class="category" aria-pressed="false" data-category="Bebidas">Bebidas</button></div>
-        <label class="search"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span class="sr-only">Buscar no cardápio</span><input type="search" id="search" placeholder="O que você procura?" autocomplete="off"></label>
-      </div>
-      <div class="demo-note" id="demo-note"><span class="demo-dot"></span><p>Estes itens e fotos são exemplos para visualizar o site. O cardápio oficial e os valores serão atualizados após confirmação.</p></div>
-      <p class="sr-only" id="results-status" aria-live="polite"></p>
-      <div class="product-grid" id="product-grid"></div>
-      <div class="no-results" id="no-results" hidden><h3>Nenhum item encontrado.</h3><p>Tente outro nome ou explore todas as categorias.</p><button class="button button-outline" id="reset-search" type="button">Mostrar todos</button></div>
-      <noscript><p>Ative o JavaScript para usar o catálogo e o carrinho. Você também pode visitar <a href="https://www.instagram.com/srsirigueijo1/">o Instagram da loja</a>.</p></noscript>
-      <div class="menu-footer"><span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Revise as quantidades antes de enviar.</span><span>Valores e disponibilidade sob consulta.</span></div>
-    </section>
-    <section class="how-section" id="como-pedir" aria-labelledby="how-title">
-      <div class="container how-inner"><div class="how-heading"><div class="eyebrow">02 / SEM COMPLICAÇÃO</div><h2 id="how-title">TRÊS PASSOS.<br><span>UM PEDIDO.</span></h2><p>Tudo organizado para conversar com a loja.</p></div><ol class="steps"><li><span class="step-number">01</span><div><h3>Escolha no catálogo</h3><p>Explore as categorias e adicione os itens ao carrinho.</p></div><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></li><li><span class="step-number">02</span><div><h3>Deixe do seu jeito</h3><p>Ajuste as quantidades e escreva as observações do pedido.</p></div><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg></li><li><span class="step-number">03</span><div><h3>Confirme com a loja</h3><p id="send-step-copy">A prévia permite copiar o resumo. O envio direto será ativado com o WhatsApp da loja.</p></div><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg></li></ol></div>
-    </section>
-    <section class="location-section container" id="localizacao" aria-labelledby="location-title">
-      <div class="location-art" aria-hidden="true"><span class="location-outline">SR.</span><img src="assets/logo.jpg" alt="" width="100" height="100"><div class="mini-location"><svg class="icon"><use href="#i-pin"/></svg> NOVA CONTAGEM</div><div class="decorative-star">✦</div></div>
-      <div class="location-copy"><div class="eyebrow">03 / ENCONTRE A LOJA</div><h2 id="location-title">PERTINHO.<br><span>DO SEU JEITO.</span></h2><p class="street">R. VP-2, 525<br>Nova Contagem</p><p class="muted">Confira as novidades no Instagram e consulte horários e disponibilidade diretamente com a loja.</p><div class="location-actions"><a class="button button-yellow" href="https://www.google.com/maps/search/?api=1&query=R.%20VP-2%2C%20525%20-%20Nova%20Contagem" target="_blank" rel="noopener noreferrer">Como chegar<svg class="icon" aria-hidden="true"><use href="#i-up-right"/></svg></a><a class="text-link" href="https://www.instagram.com/srsirigueijo1/" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg> Ver Instagram</a></div></div>
-    </section>
-    <section class="final-cta container"><span class="eyebrow">JÁ ESCOLHEU?</span><h2>AGORA É<br><span>COM VOCÊ.</span></h2><button class="button button-yellow" type="button" data-open-cart>Ver meu carrinho<svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg></button><span class="cta-star" aria-hidden="true">✦</span></section>
-  </main>
-  <footer class="footer container"><a href="#inicio" class="footer-brand">SR SIRIGUEIJO<span>✦</span></a><a class="footer-social" href="https://www.instagram.com/srsirigueijo1/" target="_blank" rel="noopener noreferrer">@srsirigueijo1<svg class="icon" aria-hidden="true"><use href="#i-up-right"/></svg></a><small>Prévia demonstrativa · Fotos ilustrativas</small></footer>
-  <button class="floating-cart" type="button" data-open-cart hidden><span class="floating-count" data-cart-count>0</span><span><b>Ver meu pedido</b><small id="floating-total">Sob consulta</small></span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <section class="catalog-section" id="cardapio" aria-labelledby="menu-title">
+        <div class="catalog-heading"><h2 id="menu-title">Destaques do cardápio</h2><button class="see-all" id="see-all" type="button">Ver todos<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><span class="item-count" id="item-count" hidden></span></div>
+        <p class="demo-note" id="demo-note">Cardápio demonstrativo · produtos e valores a confirmar</p>
+        <p class="sr-only" id="results-status" aria-live="polite"></p>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="no-results" id="no-results" hidden><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg><h3 id="empty-title">Nenhum item encontrado.</h3><p id="empty-copy">Tente outro nome ou explore as categorias.</p><button class="button button-red" id="reset-search" type="button">Explorar o cardápio<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+        <noscript><p>Ative o JavaScript para usar o catálogo e o carrinho. Visite também <a href="https://www.instagram.com/srsirigueijo1/">o Instagram da loja</a>.</p></noscript>
+      </section>
+      <section class="combo-banner" data-home-only><div class="combo-copy"><span>DO SEU JEITO</span><h2>Monte seu combo.</h2><p>Junte suas escolhas favoritas.</p><button class="banner-button" type="button" id="combo-action">Escolher itens<span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></button></div><img src="assets/cutout-combo-v2.webp" alt="Combo de lanche, fritas e bebida — imagem ilustrativa" width="650" height="650" loading="lazy"><span class="combo-stamp" aria-hidden="true">SEU<br><b>COMBO</b></span></section>
+      <div class="shop-shortcut"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>R. VP-2, 525 · Nova Contagem</span><button type="button" data-open-shop>Ver loja<svg class="icon" aria-hidden="true"><use href="#i-up-right"/></svg></button></div>
+      <p class="preview-notice" id="preview-notice">Prévia da loja · imagens ilustrativas. Cardápio oficial e WhatsApp a confirmar.</p>
+    </main>
+    <footer class="app-footer"><span>SR SIRIGUEIJO</span><a href="https://www.instagram.com/srsirigueijo1/" target="_blank" rel="noopener noreferrer">@srsirigueijo1<svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></footer>
+  </div>
+  <nav class="bottom-nav" aria-label="Navegação principal">
+    <button type="button" class="nav-item active" data-view="home" aria-current="page"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg><span>Início</span></button>
+    <button type="button" class="nav-item" data-view="menu"><svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg><span>Cardápio</span></button>
+    <button type="button" class="nav-item nav-order" data-open-cart aria-label="Ver meu pedido"><span class="order-circle"><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg><span>Pedido</span><span class="count-badge" data-cart-count hidden>0</span></span></button>
+    <button type="button" class="nav-item" data-view="favorites"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg><span>Favoritos</span></button>
+    <button type="button" class="nav-item" data-open-shop><svg class="icon" aria-hidden="true"><use href="#i-shop"/></svg><span>Loja</span></button>
+  </nav>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
-    <div class="cart-header"><div><span class="eyebrow">DO SEU JEITO</span><h2 id="cart-title">MEU PEDIDO<span>✦</span></h2></div><button class="icon-button" id="close-cart" type="button" aria-label="Fechar carrinho"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div>
-    <div class="cart-scroll">
-      <div id="cart-empty" class="cart-empty"><div class="empty-icon"><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg></div><h3>Seu pedido começa aqui.</h3><p>Adicione um item do catálogo para montar seu carrinho.</p><button class="button button-yellow" id="continue-shopping" type="button">Escolher meus itens<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
-      <div id="cart-filled" hidden>
-        <div class="cart-items" id="cart-items"></div>
-        <div class="cart-summary"><div><span>Quantidade de itens</span><b id="cart-item-total">0</b></div><div><span>Subtotal</span><b id="cart-subtotal">Sob consulta</b></div><p>Frete, disponibilidade e valor final a confirmar com a loja.</p></div>
-        <form id="checkout-form">
-          <h3>Detalhes do pedido</h3><label class="form-label" for="customer-name">Seu nome <span>*</span></label><input class="form-input" id="customer-name" name="name" placeholder="Como podemos chamar você?" autocomplete="given-name" maxlength="80" required>
+  <dialog class="navigation-dialog modal-pane" id="navigation-dialog" aria-labelledby="navigation-title"><div class="pane-header"><div><small>SR SIRIGUEIJO</small><h2 id="navigation-title">O que você procura?</h2></div><button class="icon-button" type="button" data-close-dialog aria-label="Fechar menu"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div><div class="navigation-links"><button type="button" data-view="home"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg>Início<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><button type="button" data-view="menu"><svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg>Cardápio completo<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><button type="button" data-view="favorites"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>Meus favoritos<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><button type="button" data-open-cart><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg>Meu pedido<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><button type="button" data-open-shop><svg class="icon" aria-hidden="true"><use href="#i-shop"/></svg>Sobre a loja<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div></dialog>
+  <dialog class="shop-dialog modal-pane" id="shop-dialog" aria-labelledby="shop-title"><div class="pane-header"><div><small>NOVA CONTAGEM</small><h2 id="shop-title">Sr Sirigueijo</h2></div><button class="icon-button" type="button" data-close-dialog aria-label="Fechar informações da loja"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div><div class="shop-content"><img class="shop-logo" src="assets/logo.jpg" width="82" height="82" alt="Logo Sr Sirigueijo"><h3>Seu pedido, do seu jeito.</h3><div class="shop-address"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><p>R. VP-2, 525<br><b>Nova Contagem</b></p></div><p class="shop-info">Consulte horários, disponibilidade e atendimento diretamente com a loja.</p><a class="button button-red" href="https://www.google.com/maps/search/?api=1&query=R.%20VP-2%2C%20525%20-%20Nova%20Contagem" target="_blank" rel="noopener noreferrer">Como chegar<svg class="icon" aria-hidden="true"><use href="#i-up-right"/></svg></a><a class="button button-outline" href="https://www.instagram.com/srsirigueijo1/" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>Consultar pelo Instagram</a></div></dialog>
+  <dialog class="cart-dialog modal-pane" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="pane-header cart-header"><div><small>DO SEU JEITO</small><h2 id="cart-title">Meu pedido</h2></div><button class="icon-button" id="close-cart" type="button" aria-label="Fechar carrinho"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div>
+    <div class="cart-scroll"><div id="cart-empty" class="cart-empty"><div class="empty-icon"><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg></div><h3>Seu pedido começa aqui.</h3><p>Adicione um item do catálogo para montar seu carrinho.</p><button class="button button-red" id="continue-shopping" type="button">Escolher meus itens<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+      <div id="cart-filled" hidden><div class="cart-items" id="cart-items"></div><div class="cart-summary"><div><span>Quantidade de itens</span><b id="cart-item-total">0</b></div><div><span>Subtotal</span><b id="cart-subtotal">Sob consulta</b></div><p>Frete, disponibilidade e valor final a confirmar com a loja.</p></div>
+        <form id="checkout-form"><h3>Detalhes do pedido</h3><label class="form-label" for="customer-name">Seu nome <span>*</span></label><input class="form-input" id="customer-name" name="name" placeholder="Como podemos chamar você?" autocomplete="given-name" maxlength="80" required>
           <fieldset class="fulfillment"><legend>Opção desejada <small>(a confirmar com a loja)</small></legend><label><input type="radio" name="method" value="pickup" checked><span>Retirada</span></label><label><input type="radio" name="method" value="delivery"><span>Entrega</span></label></fieldset>
           <div id="address-group" hidden><label class="form-label" for="customer-address">Endereço de entrega <span>*</span></label><textarea class="form-input" id="customer-address" name="address" placeholder="Rua, número, bairro e referência" rows="2" autocomplete="street-address" maxlength="300"></textarea></div>
           <label class="form-label" for="customer-notes">Observações <small>(opcional)</small></label><textarea class="form-input" id="customer-notes" name="notes" placeholder="Algo que a loja precisa saber?" rows="2" maxlength="500"></textarea>
           <div class="checkout-notice" id="checkout-notice"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><p>O WhatsApp da loja ainda não foi confirmado. Nesta prévia, você pode copiar o resumo do carrinho. Nenhum pedido é enviado automaticamente.</p></div>
-          <button class="button button-whatsapp" type="submit" id="send-order" disabled><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span>WhatsApp da loja pendente</span></button>
-          <button class="button button-outline copy-order" type="button" id="copy-order">Copiar resumo do pedido<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
-          <a class="checkout-instagram" href="https://www.instagram.com/srsirigueijo1/" target="_blank" rel="noopener noreferrer">Consultar a loja pelo Instagram<svg class="icon" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+          <button class="button button-whatsapp" type="submit" id="send-order" disabled><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span>WhatsApp da loja pendente</span></button><button class="button button-red copy-order" type="button" id="copy-order">Copiar resumo do pedido<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><a class="checkout-instagram" href="https://www.instagram.com/srsirigueijo1/" target="_blank" rel="noopener noreferrer">Consultar a loja pelo Instagram<svg class="icon" aria-hidden="true"><use href="#i-up-right"/></svg></a>
           <label class="form-label" for="order-preview">Resumo para conferir</label><textarea class="form-input order-preview" id="order-preview" readonly rows="7" aria-describedby="order-preview-hint"></textarea><p class="field-hint" id="order-preview-hint">Este resumo é atualizado com os itens e os dados acima.</p>
         </form>
       </div>
-    </div>
-    <div class="cart-bottom"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Você revisa antes de enviar.</span></div>
+    </div><div class="cart-bottom"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Você revisa antes de enviar.</span></div>
   </dialog>
 </body>
 </html>

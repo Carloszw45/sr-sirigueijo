@@ -7,11 +7,11 @@ window.STORE_DATA = {
   whatsapp: null,
   menuVerified: false,
   products: [
-    {id:'classico', name:'Burger clássico', category:'Lanches', description:'Exemplo: pão, hambúrguer, queijo e salada.', image:'assets/classic.webp', priceCents:null, badge:'Clássico'},
-    {id:'duplo', name:'Burger duplo', category:'Lanches', description:'Exemplo: duas carnes, queijo e salada.', image:'assets/double.webp', priceCents:null, badge:'Duplo'},
-    {id:'combo', name:'Burger + fritas', category:'Lanches', description:'Exemplo de combinação com hambúrguer e batatas.', image:'assets/double.webp', priceCents:null, badge:'Combo'},
-    {id:'fritas', name:'Batata frita', category:'Porções', description:'Exemplo de porção para acompanhar seu pedido.', image:'assets/fries.webp', priceCents:null, badge:'Para acompanhar'},
-    {id:'fritas-compartilhar', name:'Fritas para compartilhar', category:'Porções', description:'Exemplo de porção maior para dividir.', image:'assets/fries.webp', priceCents:null, badge:'Para dividir'},
-    {id:'refrigerante', name:'Refrigerante em lata', category:'Bebidas', description:'Exemplo de bebida. Marcas e sabores a confirmar.', image:'assets/drink.webp', priceCents:null, badge:'Bebidas'}
+    {id:'classico', name:'Burger clássico', category:'Lanches', description:'Exemplo: pão, hambúrguer, queijo e salada.', image:'assets/cutout-burger-v2.webp', priceCents:null, badge:'Clássico'},
+    {id:'duplo', name:'Burger duplo', category:'Lanches', description:'Exemplo: duas carnes, queijo e salada.', image:'assets/cutout-double-v2.webp', priceCents:null, badge:'Duplo'},
+    {id:'combo', name:'Burger + fritas', category:'Combos', description:'Exemplo de combinação com hambúrguer e batatas.', image:'assets/cutout-combo-v2.webp', priceCents:null, badge:'Combo'},
+    {id:'fritas', name:'Batata frita', category:'Porções', description:'Exemplo de porção para acompanhar seu pedido.', image:'assets/cutout-fries-v2.webp', priceCents:null, badge:'Para acompanhar'},
+    {id:'fritas-compartilhar', name:'Fritas para compartilhar', category:'Porções', description:'Exemplo de porção maior para dividir.', image:'assets/cutout-fries-v2.webp', priceCents:null, badge:'Para dividir'},
+    {id:'refrigerante', name:'Refrigerante', category:'Bebidas', description:'Exemplo de bebida. Marcas e sabores a confirmar.', image:'assets/cutout-drink-v2.webp', priceCents:null, badge:'Bebidas'}
   ]
 };
